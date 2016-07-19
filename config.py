@@ -9,7 +9,7 @@ login_oauth='https://sso.pokemon.com/sso/oauth2.0/accessToken'
 #urls end
 
 #values
-use_proxy=False
+use_proxy=True
 debug=False
 distance=0
 steps=0.0025
@@ -20,8 +20,8 @@ earned_xp=0
 
 #session
 proxies = {
-  'http': 'http://127.0.0.1:8888',
-  'https': 'http://127.0.0.1:8888',
+  'http': 'http://127.0.0.1:8080',
+  'https': 'http://127.0.0.1:8080',
 }
 s=requests.session()
 if use_proxy:
